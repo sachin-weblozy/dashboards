@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Portfolio</title>
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://www.weblozy.com/frontend/assets/css/main.css?id=3d10b67d8eed5244ba622d578f9f5591">
+      <link rel="icon" href="https://www.weblozy.com/fav_weblozy.png" sizes="32x32" />
+      <link rel="icon" href="https://www.weblozy.com/fav_weblozy.png" sizes="192x192" />
+      <link rel="apple-touch-icon" href="https://www.weblozy.com/fav_weblozy.png" />
+      <meta name="msapplication-TileImage" content="https://www.weblozy.com/fav_weblozy.png" />
+      <style>
+         body{
+            overflow:visible !important;
+         }
+   
+   
+         /* ------Collaborate section Css Start------ */
+         .collaborate_section .collaborate_text {
+         padding-left: 30px;
+         }
+   
+         .collaborate_section .collaborate_text .icon img{
+         border-radius: 200px;
+         }
+   
+         .collaborate_section .collaborate_text .section_title {
+         text-align: left;
+         margin: 15px 0 40px 0;
+         }
+   
+         .collaborate_section .collaborate_text .section_title h2 {
+         margin-bottom: 15px;
+         }
+   
+         .collaborate_section .collaborate_text ul {
+         padding-bottom: 25px;
+         }
+   
+         .collaborate_section .collaborate_text ul li {
+         position: relative;
+         padding-left: 115px;
+         margin-bottom: 35px;
+         }
+   
+         .collaborate_section .collaborate_text ul li::before {
+         content: "";
+         position: absolute;
+         left: 0;
+         width: 90px;
+         height: 90px;
+         background-image: url(../images/new/Syncfollowers.svg);
+         background-size: contain;
+         }
+   
+         .collaborate_section .collaborate_text ul li:last-child:before {
+         background-image: url(../images/new/Globallyconnected.svg);
+         }
+   
+         .collaborate_section .collaborate_text ul li h3 {
+         margin-bottom: 5px;
+         }
+   
+         .collaborate_section .collaborate_image {
+         background-image: url(../images/new/Collaborate.png);
+         background-size: contain;
+         background-repeat: no-repeat;
+         position: relative;
+         min-height: 575px;
+         }
+   
+         .collaborate_section .collaborate_image .img_block {
+         display: flex;
+         align-items: flex-end;
+         }
+   
+         .collaborate_section .collaborate_image .img_block:first-child {
+         padding: 15px 0 0 15px;
+         }
+   
+         .collaborate_section .collaborate_image .img_block:first-child img:last-child {
+         margin-left: 20px;
+         }
+   
+         .collaborate_section .collaborate_image .img_block:first-child .icon_img {
+         margin-bottom: -30px;
+         }
+   
+         .collaborate_section .collaborate_image .img_block:last-child {
+         align-items: flex-start;
+         margin-top: 35px;
+         padding-left: 15px;
+         }
+   
+         .collaborate_section .collaborate_image .img_block:last-child .icon_img {
+         margin-left: -80px;
+         animation-delay: 3s;
+         }
+   
+         .collaborate_section .collaborate_image .icon_img {
+         box-shadow: 0px 1px 18px 0px #e4f9fc;
+         border-radius: 10px;
+         }
+   
+         /* --------Object-Moving-Animation-Css-Start----- */
+         .moving_animation {
+         animation: moving_object 6s infinite linear;
+         }
+   
+         .moving_position_animatin {
+         position: relative;
+         animation: moving_position_animatin 6s infinite linear;
+         z-index: -1;
+         }
+   
+         .about_app_section .about_img .screen_img img {
+         animation-delay: 3s;
+         }
+   
+         .modern_ui_section .ui_images .right_img img:nth-child(3) {
+         animation-delay: 3s;
+         }
+   
+         .modern_ui_section .ui_images .right_img img:nth-child(2) {
+         animation-delay: 3s;
+         }
+   
+         .modern_ui_section .ui_images .right_img img:nth-child(1) {
+         animation-delay: 3s;
+         }
+   
+         @keyframes moving_object {
+         0% {
+            transform: translateY(0);
+         }
+   
+         50% {
+            transform: translateY(-30px);
+         }
+   
+         100% {
+            transform: translateY(0);
+         }
+         }
+   
+         @keyframes moving_position_animatin {
+         0% {
+            transform: translateY(0);
+         }
+   
+         50% {
+            transform: translateY(-30px);
+         }
+   
+         100% {
+            transform: translateY(0);
+         }
+         }
+   
+         @keyframes moving_waves {
+         0% {
+            transform: translateX(0);
+         }
+   
+         50% {
+            transform: translateX(-100px);
+         }
+   
+         100% {
+            transform: translateX(0);
+         }
+         }
+   
+         /* ------------Waves-Animation---------------- */
+         .waves-block {
+         position: absolute;
+         top: 50%;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         width: 90px;
+         height: 90px;
+         }
+   
+         .waves {
+         width: 90px;
+         height: 90px;
+         background: rgba(248, 142, 56, 0.9);
+         opacity: 0;
+         -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+         border-radius: 100%;
+         z-index: -1;
+         -webkit-animation: waves 3s ease-in-out infinite;
+         animation: waves 3s ease-in-out infinite;
+         }
+   
+         .wave-1 {
+         -webkit-animation-delay: 0s;
+         animation-delay: 0s;
+         }
+   
+         .wave-2 {
+         -webkit-animation-delay: 1s;
+         animation-delay: 1s;
+         position: absolute;
+         top: 0;
+         }
+   
+         .wave-3 {
+         -webkit-animation-delay: 2s;
+         animation-delay: 2s;
+         position: absolute;
+         top: 0;
+         }
+   
+         @keyframes waves {
+         0% {
+            -webkit-transform: scale(0.2, 0.2);
+            transform: scale(0.2, 0.2);
+            opacity: 0;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+         }
+   
+         50% {
+            opacity: 0.9;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=90)";
+         }
+   
+         100% {
+            -webkit-transform: scale(0.9, 0.9);
+            transform: scale(0.9, 0.9);
+            opacity: 0;
+            -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+         }
+         }
+   
+         /* powerful solution Section Css Start */
+   
+         .powerful_solution {
+         min-height: 1000px;
+         position: relative;
+         padding: 50px 0;
+         margin:0 0 0 0;
+         background: url(../images/new/business_vectore.png) top center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         width: 100%;
+         }
+   
+         .powerful_solution .container {
+         position: relative;
+         }
+   
+         .powerful_solution .bg_pattern img {
+         width: 100%;
+         position: absolute;
+         top: 50%;
+         }
+   
+         .powerful_solution .section_title {
+         max-width: 680px;
+         margin: 0 auto;
+         }
+   
+         .powerful_solution .section_title h2 {
+         /*color: var(--text-white);*/
+         }
+   
+         .powerful_solution .quality_lable ul {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 30px;
+         }
+   
+         .powerful_solution .quality_lable ul li {
+         padding: 5px 35px;
+         border-radius: 100px;
+         background-color: #ffffff;
+         margin: 0 10px;
+         font-weight: 600;
+         transition: .4s all;
+         cursor: context-menu;
+         }
+   
+         .powerful_solution .quality_lable ul li p {
+         margin: 0 0 0 5px;
+         transition: .3s all;
+         }
+   
+         .powerful_solution .quality_lable ul li:hover {
+         background-color: var(--bg-white);
+         color: var(--purple);
+         }
+   
+         .powerful_solution .counters_block {
+         margin: 35px 0 50px 0;
+         }
+   
+         .powerful_solution .counters_block ul {
+         display: flex;
+         justify-content: space-between;
+         }
+   
+         .powerful_solution .counters_block ul li {
+         text-align: center;
+         max-width: 180px;
+         }
+   
+         .powerful_solution .counters_block ul li p:first-child {
+         font-size: 60px;
+         font-weight: 700;
+         margin: 0;
+         line-height: 1.2;
+         min-height: 75px;
+         color: var(--main_purple);
+         }
+   
+         .powerful_solution .counters_block ul li p:last-child {
+         font-weight: 600;
+         line-height: 23px;
+         }
+   
+         .powerful_solution .images_gallery_block .gl_block .img {
+         margin-top: 30px;
+         }
+   
+         .powerful_solution .images_gallery_block .gl_block .img img {
+         max-width: 100%;
+         border-radius: 12px;
+         -webkit-box-shadow: 0px 4px 10px 2px rgba(227,225,236,1);
+         -moz-box-shadow: 0px 4px 10px 2px rgba(227,225,236,1);
+         box-shadow: 0px 4px 10px 2px rgba(227,225,236,1);
+         }
+   
+         .powerful_solution .images_gallery_block .gl_block:first-child {
+         margin-top: 50px;
+         }
+   
+         .powerful_solution .images_gallery_block .gl_block:last-child {
+         margin-top: 80px;
+         }
+      </style>
+      <style>[wire\:loading], [wire\:loading\.delay], [wire\:loading\.inline-block], [wire\:loading\.inline], [wire\:loading\.block], [wire\:loading\.flex], [wire\:loading\.table], [wire\:loading\.grid], [wire\:loading\.inline-flex] {display: none;}[wire\:loading\.delay\.shortest], [wire\:loading\.delay\.shorter], [wire\:loading\.delay\.short], [wire\:loading\.delay\.long], [wire\:loading\.delay\.longer], [wire\:loading\.delay\.longest] {display:none;}[wire\:offline] {display: none;}[wire\:dirty]:not(textarea):not(input):not(select) {display: none;}input:-webkit-autofill, select:-webkit-autofill, textarea:-webkit-autofill {animation-duration: 50000s;animation-name: livewireautofill;}@keyframes livewireautofill { from {} }</style>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=UA-243777343-1" type="e2498f9d8191cf6c51c4df33-text/javascript"></script>
+      <script type="e2498f9d8191cf6c51c4df33-text/javascript">
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'UA-243777343-1');
+      </script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=AW-10940714017" type="e2498f9d8191cf6c51c4df33-text/javascript"></script>
+      <script type="e2498f9d8191cf6c51c4df33-text/javascript">
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'AW-10940714017');
+      </script>
+      <script async src="https://www.googletagmanager.com/gtag/js?id=G-G95L1WTNWL" type="e2498f9d8191cf6c51c4df33-text/javascript"></script>
+      <script type="e2498f9d8191cf6c51c4df33-text/javascript">
+         window.dataLayer = window.dataLayer || [];
+         function gtag(){dataLayer.push(arguments);}
+         gtag('js', new Date());
+         
+         gtag('config', 'G-G95L1WTNWL');
+      </script>
+      <script type="e2498f9d8191cf6c51c4df33-text/javascript">
+         !function(f,b,e,v,n,t,s)
+         {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+         n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+         if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+         n.queue=[];t=b.createElement(e);t.async=!0;
+         t.src=v;s=b.getElementsByTagName(e)[0];
+         s.parentNode.insertBefore(t,s)}(window, document,'script',
+         'https://connect.facebook.net/en_US/fbevents.js');
+         fbq('init', '1125725738337949');
+         fbq('track', 'PageView');
+      </script>
+      <noscript>
+         <img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1125725738337949&ev=PageView&noscript=1" />
+      </noscript>
+      <script type="e2498f9d8191cf6c51c4df33-text/javascript">
+         !function(q,e,v,n,t,s){if(q.qp) return; n=q.qp=function(){n.qp?n.qp.apply(n,arguments):n.queue.push(arguments);}; n.queue=[];t=document.createElement(e);t.async=!0;t.src=v; s=document.getElementsByTagName(e)[0]; s.parentNode.insertBefore(t,s);}(window, 'script', 'https://a.quora.com/qevents.js');
+         qp('init', '28ae396ac26540d5bfc776ccf3fe6e66');
+         qp('track', 'ViewContent');
+      </script>
+      <noscript><img height="1" width="1" style="display:none" src="https://q.quora.com/_/ad/28ae396ac26540d5bfc776ccf3fe6e66/pixel?tag=ViewContent&noscript=1"/></noscript>
+      <script type="e2498f9d8191cf6c51c4df33-text/javascript">qp('track', 'GenerateLead');</script>
+   </head>
+   <body class="portfolio-page">
+      <div class="cursor"></div>
+      <div class="slide-details">
+         <svg xmlns="http://www.w3.org/2000/svg" class="close" viewBox="0 0 20 20" fill="currentColor" onclick="if (!window.__cfRLUnblockHandlers) return false; slideDetails.close()" data-cf-modified-e2498f9d8191cf6c51c4df33->
+            <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+         </svg>
+         <div class="content"></div>
+      </div>
+      <header>
+         <nav class="p-0 navbar navbar-expand-lg ">
+            <div class="container">
+               <a class="navbar-brand" href="https://www.weblozy.com">
+               <img src="https://www.weblozy.com/frontend/assets/images/weblozy.png" alt width="200" height="54">
+               </a>
+               <button class="navbar-toggler text-light" type="button" data-bs-toggle="collapse" data-bs-target="#mobilenav">
+               <i class="fa-solid fa-bars"></i>
+               </button>
+               <div class="collapse navbar-collapse justify-content-end" id="mobilenav">
+                  <ul class="mb-2 ml-auto navbar-nav mb-lg-0">
+                     <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="https://www.weblozy.com/services">Services</a>
+                        <div class="megamenu" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/webdev.svg">
+                           <div class="menu-block-wrap">
+                              <div class="menu-block">
+                                 <div class="item-title">
+                                    Web Development
+                                 </div>
+                                 <ul class="item" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/web.svg">
+                                    <li>
+                                       <a href="https://www.weblozy.com/services/web-development" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/webdev.svg">Web Development</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/services/web-design" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/webdesign.svg">
+                                       UI/UX Design
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/services/ecommerce-development" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/ecommerce.svg">
+                                       Ecommerce Development
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/services/web-application-development" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/webapp.svg">
+                                       Web Application Development
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="menu-block" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/marketing.svg">
+                                 <div class="item-title">
+                                    Digital Marketing
+                                 </div>
+                                 <ul class="item">
+                                    <li>
+                                       <a href="https://www.weblozy.com/services/digital-marketing" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/digitalmarketing.svg">
+                                       Digital Marketing
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/services/search-engine-optimization" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/seo.svg">
+                                       Search Engine Optimization (SEO)
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/services/social-media-optimization" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/smo.svg">
+                                       Social Media Optimization (SMO)
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/services/paid-marketing" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/ppc.svg">
+                                       Paid Marketing
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/services/content-writing" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/contentwriting.svg">
+                                       Content Writing
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="menu-block" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/software.svg">
+                                 <div class="item-title">
+                                    Software Development
+                                 </div>
+                                 <ul class="item">
+                                    <li>
+                                       <a href="https://www.weblozy.com/services/software-development" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/software.svg">
+                                       Custom Software Development
+                                       </a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/services/cloud-application-development" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/software.svg">
+                                       Cloud Application Development
+                                       </a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="bgimg"></div>
+                        </div>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="https://www.weblozy.com/about-us">
+                        Company
+                        </a>
+                        <div class="megamenu" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/company.svg">
+                           <div class="menu-block-wrap">
+                              <div class="menu-block" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/company.svg">
+                                 <div class="item-title">
+                                    About Weblozy
+                                 </div>
+                                 <ul class="item">
+                                    <li>
+                                       <a href="https://www.weblozy.com/about-us" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/about.svg">About Us</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/clients" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/client.svg">Our Clients</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/testimonials" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/testimonial.svg">Testimonials</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="menu-block" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/company.svg">
+                                 <div class="item-title">
+                                    More
+                                 </div>
+                                 <ul class="item">
+                                    <li>
+                                       <a href="https://www.weblozy.com/faq" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/faq.svg">FAQs</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/blogs" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/blog.svg">Blogs</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/careers" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/careers.svg">Careers</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                              <div class="menu-block" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/links.svg">
+                                 <div class="item-title">
+                                    Quick Links
+                                 </div>
+                                 <ul class="item">
+                                    <li>
+                                       <a href="https://www.weblozy.com/privacy-policy" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/privacy.svg">Privacy Policy</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/disclaimer" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/disclaimer.svg">Disclaimer</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/refund-and-cancellation-policy" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/disclaimer.svg">Refund Policy</a>
+                                    </li>
+                                    <li>
+                                       <a href="https://www.weblozy.com/terms-and-conditions" data-bg="https://www.weblozy.com/frontend/assets/images/megamenu/terms.svg">Terms and Conditions</a>
+                                    </li>
+                                 </ul>
+                              </div>
+                           </div>
+                           <div class="bgimg"></div>
+                        </div>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="https://www.weblozy.com/hire-developers">Hire Developers</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="https://www.weblozy.com/portfolio">Portfolio</a>
+                     </li>
+                     <li class="nav-item">
+                        <a class="nav-link" href="https://www.weblozy.com/case-studies">Case Studies</a>
+                     </li>
+                     <li class="nav-item nav-cta">
+                        <a class="nav-link" href="https://www.weblozy.com/contact-us">Contact Us</a>
+                     </li>
+                  </ul>
+               </div>
+            </div>
+         </nav>
+      </header>             
+   <main>
+      <!-- <div class="customer-main-rlsec">
+         <div class="cstmr-cntnt-sec">
+            <h2 class="label-txt">FOR LOYAL CUSTOMERS</h2>
+            <h2 class="inner-hdr">Build great customer relationships</h2>
+            <p class="para">Providing personalized experiences is what keeps customers around, and <span class="dib">Zoho CRM</span> can help you do just that. With the power of omnichannel presence, segmentation, predictive intelligence, and more, you can build and maintain great customer relationships.</p>
+            <a href="#" target="_blank" rel="noopener" class="learnmore ylw-txt">How <span class="dib">Zoho CRM</span> can help build better relationships<span class="lnr-arow"></span></a>
+         </div>
+         <div class="cstmr-img-sec anim-con">
+            <span class="arrw-icn cust-sprt"></span><span class="cust-sprt arrw-icn2"></span> 
+            <picture>
+               <source class="webp" data-srcset="https://demo.thebuildportals.com/frontend/images/home/cominication-data-03.webp" type="image/webp">
+               <source class="other_format" data-srcset="//www.zohowebstatic.com/sites/zweb/images/crm/zcrm-multichanel-man-2x.png" type="image/jpeg">
+               <img data-src="//www.zohowebstatic.com/sites/zweb/images/crm/zcrm-multichanel-man_lazy.png" src="//www.zohowebstatic.com/sites/zweb/images/crm/easy_multichanel-man.png" width="530" height="602" class="multichnl-img zcp_lazy zcp_loading" alt="CRM home banner">
+            </picture>
+            <img src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-03.webp" data-src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-03.webp" class="cust-seg anim-init anim-elem anim4 zcp_lazy zcp_loading" width="500" height="124" alt="Segmentation"> <img src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-03.webp" data-src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-03.webp" class="melinda-img anim-init anim-elem anim1 zcp_lazy zcp_loading" width="240" height="393" alt="Contact Card"> <img src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-03.webp" data-src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-03.webp" class="best-cimg anim-init anim-elem anim3 zcp_lazy zcp_loading" width="255" height="83" alt="Best Time to Contact"> <img src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-03.webp" data-src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-03.webp" class="twiter-img anim-init anim-elem anim2 zcp_lazy zcp_loading" width="305" height="316" alt="Social Media Card">
+         </div>
+      </div> -->
+      <section class="row_am communication_section" style="background-image: url('dashboard/hero-bg.png'); background-repeat: no-repeat;">
+         <div class="communication_inner">
+           <div class="container">
+             <div class="row">
+               <div class="col-md-12">
+                 <div class="communication_image" data-aos="fade-in" data-aos-duration="1000" style="text-align: center; margin-top: 100px;">
+                   <img data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" class="moving_animation"
+                     src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-03.webp" alt="image">
+                   <img data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" class="moving_animation"
+                     src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-02.webp" alt="image">
+                   <img data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" class=""
+                     src="dashboard/hero/zcrm-multichanel-man-1x.webp" alt="image">
+                     <img data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" class="moving_animation"
+                     src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-03.webp" alt="image">
+                   <img data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" class="moving_animation"
+                     src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-02.webp" alt="image">
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section>
+      <!-- <section class="row_am collaborate_section" style="background-image: url('dashboard/hero-bg.png'); background-repeat: no-repeat;">
+         <div class="container">
+           <div class="row">
+             <div class="col-md-12">
+               <div class="" style="margin-top: 100px;;" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100">
+                 <div class="img_block" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" style="text-align: center; ">
+                  
+                   <img class="icon_img moving_animation" src="https://demo.thebuildportals.com/frontend/images/new/Collaborate-icon_1.png" alt="image" >
+                   <img src="dashboard/hero/zcrm-multichanel-man-1x.webp" alt="image"style="animation-name: fadeinLoad; 
+                   animation-duration: 1s; 
+                   animation-delay: 5s; 
+                   animation-fill-mode: forwards;">
+                 </div>
+                 <div class="img_block" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100">
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section> -->
+
+       <!-- <section class="row_am collaborate_section" style="background-image: url('dashboard/hero-bg.png'); min-height: 700px;">
+         <div class="container">
+           <div class="row">
+             <div class="col-md-12">
+               <div class="collaborate_image" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100">
+                 <div class="img_block" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100">
+                   <img class="icon_img moving_animation" src="https://demo.thebuildportals.com/frontend/images/new/Collaborate-icon_1.png" alt="image">
+                   <img src="https://demo.thebuildportals.com/frontend/images/home/Collaborate-01.webp" alt="image">
+                 </div>
+                 <div class="img_block" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100">
+                   <img src="https://demo.thebuildportals.com/frontend/images/home/Collaborate-02.webp" alt="image">
+                   <img class="icon_img moving_animation" src="https://demo.thebuildportals.com/frontend/images/new/Collaborate-icon_2.png" alt="image">
+                 </div>
+               </div>
+             </div>
+           </div>
+         </div>
+       </section> -->
+
+
+      <section class="section mt-5">
+         <div class="container">
+            <div class="mx-auto row w-100 g-5 align-items-center">
+               <div class="col-md-6">
+                  <img src="dashboard/activity-log.png" alt>
+               </div>
+               <div class="col-md-6">
+                  <div class="section-head">
+                     <h1 class="section-title">
+                        Secure your website by tracking all activities
+                     </h1>
+                  </div>
+                  <div class="section-content">
+                     <p class="lead">
+                        Ever wondered what happens behind the scenes on your website? With our Activity Log feature, wonder no more. We've crafted an intuitive tool that allows you to track every move your users make on the panel. From sign-ins to clicks and beyond, our Activity Log unveils the intricate dance of interactions, providing you with an insightful narrative of user engagement.
+                     </p>
+                     <p class="lead">
+                        No more mysteries—just clear, concise data that empowers you to understand and enhance the user experience. Say hello to transparency and wave goodbye to uncertainty.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section mt-5">
+         <div class="container">
+            <div class="mx-auto row w-100 g-5 align-items-center">
+               <div class="col-md-6">
+                  <div class="section-head">
+                     <h1 class="section-title">
+                        Simplified Managing Media
+                     </h1>
+                  </div>
+                  <div class="section-content">
+                     <p class="lead">
+                        Introducing the Media Manager—a virtual haven for your digital assets. Need a secure space to upload, store, and manage product images effortlessly? Look no further. Our Media Manager ensures high-security storage and a user-friendly interface that simplifies the process of organizing your digital arsenal.
+                     </p>
+                     <p class="lead">
+                        From sleek product images to captivating visuals, upload with ease and retrieve at your convenience. It's not just a media manager; it's a go to option for a seamless, organized, and visually striking online presence.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <img src="dashboard/media-manager.png" alt>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section mt-5">
+         <div class="container">
+            <div class="mx-auto row w-100 g-5 align-items-center">
+               <div class="col-md-6">
+                  <img src="dashboard/graph.png" alt>
+               </div>
+               <div class="col-md-6">
+                  <div class="section-head">
+                     <h1 class="section-title">
+                        Advanced Analytics for Better Insights
+                     </h1>
+                  </div>
+                  <div class="section-content">
+                     <p class="lead">
+                        Numbers and stats don't have to be dull. Keep all data at your fingertips. Check  your website's performance with visually appealing graphs and charts. Our analytics tool is not just about numbers; it's about making data aesthetically pleasing, easy to interpret, and a joy to explore.
+                     </p>
+                     <p class="lead">
+                        Check stats in a way that's not only informative but also pleasing to the eye. Embrace the power of Advanced Analytics—it's where data meets design for a delightful analytical experience.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section mt-5">
+         <div class="container">
+            <div class="mx-auto row w-100 g-5 align-items-center">
+               <div class="col-md-6">
+                  <div class="section-head">
+                     <h1 class="section-title">
+                        Live page code editor
+                     </h1>
+                  </div>
+                  <div class="section-content">
+                     <p class="lead">
+                        Gone are the days of trial and error, waiting for changes to take effect. With our Live Page Code Editor, witness the transformation instantly. Whether you're tweaking the layout, experimenting with colors, or fine-tuning functionalities, the live preview feature ensures that every line of code is a brushstroke on your digital masterpiece. 
+                     </p>
+                     <p class="lead">
+                        Embrace the freedom to code, visualize, and refine—all in the dynamic immediacy of the Live Page Code Editor.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <img src="dashboard/code-editor.png" alt>
+               </div>
+            </div>
+         </div>
+      </section>
+      <section class="section mt-5">
+         <div class="container">
+            <div class="mx-auto row w-100 g-5 align-items-center">
+               <div class="col-md-6">
+                  <img src="dashboard/ui-gif.gif" alt>
+               </div>
+               <div class="col-md-6">
+                  <div class="section-head">
+                     <h1 class="section-title">
+                        Clean and Easily Manageable Dashboard
+                     </h1>
+                  </div>
+                  <div class="section-content">
+                     <p class="lead">
+                        We understand the value of simplicity, and our dashboard reflects just that. Function and manage  effortlessly through a clutter-free interface, where every element serves a purpose.
+                     </p>
+                     <p class="lead">
+                        The organized look ensures that information is at your fingertips, promoting a seamless user experience. Say goodbye to the chaos of complex layouts—our dashboard is a breath of fresh air, offering not just clarity, but a sense of control and efficiency.
+                     </p>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <section class="powerful_solution" data-aos="fade-in" data-aos-duration="1000">
+      
+         <div class="container">
+           <div class="section_title" data-aos="fade-up" data-aos-duration="1000">
+             <h2>Industry Expertise and Experience</h2>
+             <p>Many industry leaders already trust us for their security needs; join the ranks of our satisfied clients.</p>
+           </div>
+           <div class="images_gallery_block row">
+             <div class="gl_block col-md-3 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
+               <div class="img"><img src="dashboard/bulk-notif.png" alt="image"></div>
+               <div class="img"><img src="dashboard/bulk-project.png" alt="image"></div>
+             </div>
+             <div class="gl_block col-md-3 col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="100">
+               <div class="img"><img src="dashboard/bulk-theme.png" alt="image"></div>
+               <div class="img"><img src="dashboard/bulk-pie2.png" alt="image"></div>
+               <div class="img"><img src="dashboard/bulk-graph2.png" alt="image"></div>
+             </div>
+             <div class="gl_block col-md-3 col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="150">
+               <div class="img"><img src="dashboard/bulk-sidebar.png" alt="image"></div>
+               <div class="img"><img src="dashboard/bulk-graph3.png" alt="image"></div>
+             </div>
+             <div class="gl_block col-md-3 col-sm-6" data-aos="fade-up" data-aos-duration="1000" data-aos-delay="200">
+               <div class="img"><img src="dashboard/bulk-pie.png" alt="image"></div>
+               <div class="img"><img src="dashboard/bulk-todo.png" alt="image"></div>
+             </div>
+           </div>
+         </div>
+       </section>
+      <section class="section portfolio-footer">
+         <div class="container">
+            <div class="row">
+               <div class="col">
+                  <div class="footer-card">
+                     <h3>New project in the works?</h3>
+                     <h5>We would love to hear about it</h5>
+                     <div class="contact-info">
+                        <div class="contact-item">
+                           IN:
+                           <div class="icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                              </svg>
+                           </div>
+                           <div class="content">
+                              <a href="tel:+91 96678 96604">+91 96678 96604</a>
+                           </div>
+                        </div>
+                        <div class="contact-item">
+                           USA:
+                           <div class="icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                 <path d="M2 3a1 1 0 011-1h2.153a1 1 0 01.986.836l.74 4.435a1 1 0 01-.54 1.06l-1.548.773a11.037 11.037 0 006.105 6.105l.774-1.548a1 1 0 011.059-.54l4.435.74a1 1 0 01.836.986V17a1 1 0 01-1 1h-2C7.82 18 2 12.18 2 5V3z"></path>
+                              </svg>
+                           </div>
+                           <div class="content">
+                              <a href="tel:+1 320 433 0111">+1 320 433 0111</a>
+                           </div>
+                        </div>
+                        <div class="contact-item">
+                           <div class="icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                 <path fill-rule="evenodd" d="M14.243 5.757a6 6 0 10-.986 9.284 1 1 0 111.087 1.678A8 8 0 1118 10a3 3 0 01-4.8 2.401A4 4 0 1114 10a1 1 0 102 0c0-1.537-.586-3.07-1.757-4.243zM12 10a2 2 0 10-4 0 2 2 0 004 0z" clip-rule="evenodd"></path>
+                              </svg>
+                           </div>
+                           <div class="content">
+                              <a href="/cdn-cgi/l/email-protection#89e0e7efe6c9feecebe5e6f3f0a7eae6e4"><span class="__cf_email__" data-cfemail="573e393138172032353b382d2e7934383a">[email&#160;protected]</span></a>
+                           </div>
+                        </div>
+                     </div>
+                     <a class="btn btn-light btn-lg" href="https://www.weblozy.com/contact-us">Let's Talk</a>
+                  </div>
+               </div>
+               <div class="col">
+                  <div class="footer-card">
+                     <h3>Where to find us?</h3>
+                     <h5>Our social media and address</h5>
+                     <div class="contact-info">
+                        <div class="contact-item">
+                           <div class="icon">
+                              <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="currentColor">
+                                 <path fill-rule="evenodd" d="M5.05 4.05a7 7 0 119.9 9.9L10 18.9l-4.95-4.95a7 7 0 010-9.9zM10 11a2 2 0 100-4 2 2 0 000 4z" clip-rule="evenodd"></path>
+                              </svg>
+                           </div>
+                           <div class="content">
+                              GH-03, Sector 16B, Greater Noida West, Uttar Pradesh 201318, INDIA
+                           </div>
+                        </div>
+                     </div>
+                     <div class="social">
+                        <a href="https://www.facebook.com/weblozy/" class="fb">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M2.00195 12.002C2.00312 16.9214 5.58036 21.1101 10.439 21.881V14.892H7.90195V12.002H10.442V9.80204C10.3284 8.75958 10.6845 7.72064 11.4136 6.96698C12.1427 6.21332 13.1693 5.82306 14.215 5.90204C14.9655 5.91417 15.7141 5.98101 16.455 6.10205V8.56104H15.191C14.7558 8.50405 14.3183 8.64777 14.0017 8.95171C13.6851 9.25566 13.5237 9.68693 13.563 10.124V12.002H16.334L15.891 14.893H13.563V21.881C18.8174 21.0506 22.502 16.2518 21.9475 10.9611C21.3929 5.67041 16.7932 1.73997 11.4808 2.01722C6.16831 2.29447 2.0028 6.68235 2.00195 12.002Z" fill="currentColor"></path>
+                           </svg>
+                        </a>
+                        <a href="https://www.instagram.com/weblozy/" class="in">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M12.002 21.041C9.54195 21.041 9.25195 21.028 8.29195 20.986C7.54332 20.9614 6.80439 20.8092 6.10695 20.536C4.90026 20.0664 3.94609 19.1119 3.47695 17.905C3.21426 17.205 3.07257 16.4655 3.05795 15.718C3.00195 14.76 3.00195 14.446 3.00195 12.005C3.00195 9.538 3.01495 9.25 3.05795 8.295C3.07289 7.54853 3.21457 6.81001 3.47695 6.111C3.94558 4.90253 4.9013 3.94718 6.10995 3.479C6.8086 3.21521 7.5473 3.07315 8.29395 3.059C9.24895 3.005 9.56295 3.005 12.002 3.005C14.482 3.005 14.767 3.018 15.712 3.059C16.4605 3.07327 17.2012 3.21531 17.902 3.479C19.1103 3.94771 20.0658 4.90288 20.535 6.111C20.8021 6.8202 20.9445 7.57026 20.956 8.328C21.012 9.286 21.012 9.59901 21.012 12.039C21.012 14.479 20.998 14.799 20.956 15.746C20.9411 16.4942 20.799 17.2344 20.536 17.935C20.0656 19.1427 19.11 20.0976 17.902 20.567C17.2022 20.8292 16.4631 20.9709 15.716 20.986C14.761 21.041 14.448 21.041 12.002 21.041ZM11.968 4.588C9.52195 4.588 9.26795 4.6 8.31295 4.643C7.74294 4.65056 7.17843 4.75575 6.64395 4.954C5.85471 5.25601 5.23018 5.878 4.92495 6.666C4.72517 7.2063 4.61996 7.77698 4.61395 8.353C4.56095 9.322 4.56095 9.576 4.56095 12.005C4.56095 14.405 4.56995 14.696 4.61395 15.659C4.62291 16.2292 4.72805 16.7938 4.92495 17.329C5.23063 18.1165 5.85505 18.738 6.64395 19.04C7.17807 19.2396 7.7428 19.3448 8.31295 19.351C9.28095 19.407 9.53595 19.407 11.968 19.407C14.421 19.407 14.675 19.395 15.622 19.351C16.1924 19.3441 16.7573 19.2389 17.292 19.04C18.0764 18.7354 18.6969 18.1153 19.002 17.331C19.2014 16.7903 19.3065 16.2193 19.313 15.643H19.324C19.367 14.687 19.367 14.432 19.367 11.989C19.367 9.54601 19.356 9.289 19.313 8.334C19.304 7.76446 19.1988 7.20052 19.002 6.666C18.6976 5.88058 18.077 5.2593 17.292 4.954C16.7574 4.75475 16.1924 4.64953 15.622 4.643C14.655 4.588 14.402 4.588 11.968 4.588ZM12.002 16.624C10.1319 16.6252 8.44537 15.4997 7.72882 13.7725C7.01226 12.0452 7.40686 10.0563 8.72858 8.73347C10.0503 7.4106 12.0388 7.01428 13.7667 7.72934C15.4946 8.4444 16.6215 10.13 16.622 12C16.6192 14.5511 14.553 16.619 12.002 16.624ZM12.002 8.998C10.3451 8.998 9.00195 10.3412 9.00195 11.998C9.00195 13.6549 10.3451 14.998 12.002 14.998C13.6588 14.998 15.002 13.6549 15.002 11.998C14.9981 10.3427 13.6572 9.00185 12.002 8.998ZM16.802 8.28501C16.2074 8.2828 15.7269 7.79959 15.728 7.20501C15.7291 6.61043 16.2114 6.12901 16.806 6.12901C17.4005 6.12901 17.8828 6.61042 17.884 7.205C17.8842 7.49187 17.7702 7.76703 17.5672 7.96968C17.3642 8.17234 17.0888 8.2858 16.802 8.28501Z" fill="currentColor"></path>
+                           </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/company/weblozy/" class="li">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M13 21H9V9H13V11C13.8526 9.91525 15.1456 9.26857 16.525 9.237C19.0056 9.25077 21.0072 11.2694 21 13.75V21H17V14.25C16.84 13.1326 15.8818 12.3036 14.753 12.306C14.2593 12.3216 13.7932 12.5378 13.4624 12.9046C13.1316 13.2715 12.9646 13.7573 13 14.25V21ZM7 21H3V9H7V21ZM5 7C3.89543 7 3 6.10457 3 5C3 3.89543 3.89543 3 5 3C6.10457 3 7 3.89543 7 5C7 5.53043 6.78929 6.03914 6.41421 6.41421C6.03914 6.78929 5.53043 7 5 7Z" fill="currentColor"></path>
+                           </svg>
+                        </a>
+                        <a href="https://twitter.com/weblozy" class="tw">
+                           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                              <path d="M19.995 6.68799C20.8914 6.15208 21.5622 5.30823 21.882 4.31399C21.0397 4.81379 20.118 5.16587 19.157 5.35499C17.8246 3.94552 15.7135 3.60251 14.0034 4.51764C12.2933 5.43277 11.4075 7.37948 11.841 9.26999C8.39062 9.09676 5.17598 7.4669 2.99702 4.78599C1.85986 6.74741 2.44097 9.25477 4.32502 10.516C3.64373 10.4941 2.97754 10.3096 2.38202 9.97799C2.38202 9.99599 2.38202 10.014 2.38202 10.032C2.38241 12.0751 3.82239 13.8351 5.82502 14.24C5.19308 14.4119 4.53022 14.4372 3.88702 14.314C4.45022 16.0613 6.06057 17.2583 7.89602 17.294C6.37585 18.4871 4.49849 19.1342 2.56602 19.131C2.22349 19.1315 1.88123 19.1118 1.54102 19.072C3.50341 20.333 5.78739 21.0023 8.12002 21C11.3653 21.0223 14.484 19.7429 16.7787 17.448C19.0734 15.1531 20.3526 12.0342 20.33 8.78899C20.33 8.60299 20.3257 8.41799 20.317 8.23399C21.1575 7.62659 21.8828 6.87414 22.459 6.01199C21.676 6.35905 20.8455 6.58691 19.995 6.68799Z" fill="currentColor"></path>
+                           </svg>
+                        </a>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+   </main>
+   <footer class="footer">
+      <div class="footer-base section">
+         <div class="to-top">
+            <i class="fa-solid fa-arrow-up"></i>
+         </div>
+         <div class="container">
+            <div class="row">
+               <div class="col-sm-12 col-md-8">
+                  <div class="logo">
+                     <img src="https://www.weblozy.com/frontend/assets/images/weblozy.png" alt width="200" height="54">
+                  </div>
+                  <nav class="footlinks">
+                     <div class="link-wrap">
+                        <div class="title">About</div>
+                        <ul>
+                           <li>
+                              <a href="https://www.weblozy.com/about-us">Company</a>
+                           </li>
+                           <li>
+                              <a href="https://www.weblozy.com/blogs">Blogs</a>
+                           </li>
+                           <li>
+                              <a href="https://www.weblozy.com/services">Services</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="link-wrap">
+                        <div class="title">Services</div>
+                        <ul>
+                           <li>
+                              <a href="https://www.weblozy.com/services/web-application-development">Web Application</a>
+                           </li>
+                           <li>
+                              <a href="https://www.weblozy.com/services/digital-marketing">Digital Marketing</a>
+                           </li>
+                           <li>
+                              <a href="https://www.weblozy.com/services/software-development">Software Development</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="link-wrap">
+                        <div class="title">Quick Links</div>
+                        <ul>
+                           <li>
+                              <a href="https://www.weblozy.com/hire-developers">Hire Developers</a>
+                           </li>
+                           <li>
+                              <a href="https://www.weblozy.com/contact-us">Contact Us</a>
+                           </li>
+                        </ul>
+                     </div>
+                     <div class="link-wrap">
+                        <div class="title">Support</div>
+                        <ul>
+                           <li>
+                              <a href="https://www.weblozy.com/support/ticket">Create a Ticket</a>
+                           </li>
+                           <li>
+                              <a href="https://www.weblozy.com/support/track">Track Ticket</a>
+                           </li>
+                        </ul>
+                     </div>
+                  </nav>
+               </div>
+               <div class="col-sm-12 col-md-4">
+                  <div class="mb-2 social-text text-md-end text-light">Find us on</div>
+                  <div class="social">
+                     <a href="https://www.facebook.com/weblozy/" target="_blank">
+                     <i class="fa-brands fa-facebook"></i>
+                     </a>
+                     <a href="https://www.instagram.com/weblozy/" target="_blank">
+                     <i class="fa-brands fa-instagram"></i>
+                     </a>
+                     <a href="https://twitter.com/weblozy" target="_blank">
+                     <i class="fa-brands fa-twitter"></i>
+                     </a>
+                     <a href="https://www.linkedin.com/company/weblozy/" target="_blank">
+                     <i class="fa-brands fa-linkedin-in"></i>
+                     </a>
+                  </div>
+                  <div class="mt-4 tagline text-light text-md-end fs-4">
+                     We Simplify The Internet
+                  </div>
+                  <div class="mt-4">
+                     <div id="gtranslate"></div>
+                  </div>
+                  <div class="mt-4">
+                     <div class="footer-logos">
+                        <div class="item">
+                           <img src="https://www.weblozy.com/uploads/2023/07/startupindia.svg" alt>
+                        </div>
+                        <div class="item">
+                           <img src="https://www.weblozy.com/uploads/2023/07/msme-white.svg" alt>
+                        </div>
+                        <div class="item">
+                           <img src="https://www.weblozy.com/uploads/2023/07/clutch-white.svg" alt>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </div>
+      <div class="copyright">
+         <div class="container">
+            <div class="notice">
+               Copyrights weblozy.com. All rights reserved.
+            </div>
+            <div class="links">
+               <a href="https://www.weblozy.com/sitemap.xml">Sitemap</a>
+               |
+               <a href="https://www.weblozy.com/terms-and-conditions">Terms and Conditions</a>
+               |
+               <a href="https://www.weblozy.com/privacy-policy">Privacy Policy</a>
+               |
+               <a href="https://www.weblozy.com/refund-and-cancellation-policy">Refund Policy</a>
+            </div>
+         </div>
+      </div>
+   </footer>
+
+   <div class="slide-details">
+      <svg xmlns="http://www.w3.org/2000/svg" class="close" viewBox="0 0 20 20" fill="currentColor" onclick="if (!window.__cfRLUnblockHandlers) return false; slideDetails.close()" data-cf-modified-a94e2fc12cdd148e13e26dff->
+         <path fill-rule="evenodd" d="M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+      </svg>
+      <div class="content"></div>
+   </div>
+</body>
+</html>
