@@ -16,7 +16,23 @@
          body{
             overflow:visible !important;
          }
-   
+         
+         @media only screen and (min-width: 1400px) {
+            .communication_section {
+               display: block;
+            }
+            .communication_section2 {
+               display: none;
+            }
+         }
+         @media only screen and (max-width: 1400px) {
+            .communication_section {
+               display: none;
+            }
+            .communication_section2 {
+               display: block;
+            }
+         }
    
          /* ------Collaborate section Css Start------ */
          .collaborate_section .collaborate_text {
@@ -109,6 +125,12 @@
          .moving_animation {
          animation: moving_object 6s infinite linear;
          }
+         .moving_animation2 {
+         animation: moving_object2 6s infinite linear;
+         }
+         .moving_animation3 {
+         animation: moving_object3 6s infinite linear;
+         }
    
          .moving_position_animatin {
          position: relative;
@@ -138,7 +160,34 @@
          }
    
          50% {
-            transform: translateY(-30px);
+            transform: translateY(-20px);
+         }
+   
+         100% {
+            transform: translateY(0);
+         }
+         }
+
+         @keyframes moving_object2 {
+         0% {
+            transform: translateY(0);
+         }
+   
+         50% {
+            transform: translateY(20px);
+         }
+   
+         100% {
+            transform: translateY(0);
+         }
+         }
+         @keyframes moving_object3 {
+         0% {
+            transform: translateY(0);
+         }
+   
+         50% {
+            transform: translateX(20px);
          }
    
          100% {
@@ -594,62 +643,26 @@
              <div class="row">
                <div class="col-md-12">
                  <div class="communication_image" data-aos="fade-in" data-aos-duration="1000" style="text-align: center; margin-top: 100px;">
-                   <img data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" class="moving_animation"
-                     src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-03.webp" alt="image">
-                   <img data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" class="moving_animation"
-                     src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-02.webp" alt="image">
+                   <!-- <img data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" class="moving_animation"
+                     src="dashboard/hero2.png" alt="image"> -->
+                   <img data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" class="moving_animation3"
+                     src="dashboard/hero1.png" alt="image">
                    <img data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" class=""
                      src="dashboard/hero/zcrm-multichanel-man-1x.webp" alt="image">
-                     <img data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" class="moving_animation"
-                     src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-03.webp" alt="image">
-                   <img data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" class="moving_animation"
-                     src="https://demo.thebuildportals.com/frontend/images/home/cominication-data-02.webp" alt="image">
+                     <img data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" class="moving_animation2"
+                     src="dashboard/hero2.png" alt="image">
                  </div>
                </div>
              </div>
            </div>
          </div>
-       </section>
-      <!-- <section class="row_am collaborate_section" style="background-image: url('dashboard/hero-bg.png'); background-repeat: no-repeat;">
-         <div class="container">
-           <div class="row">
-             <div class="col-md-12">
-               <div class="" style="margin-top: 100px;;" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100">
-                 <div class="img_block" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100" style="text-align: center; ">
-                  
-                   <img class="icon_img moving_animation" src="https://demo.thebuildportals.com/frontend/images/new/Collaborate-icon_1.png" alt="image" >
-                   <img src="dashboard/hero/zcrm-multichanel-man-1x.webp" alt="image"style="animation-name: fadeinLoad; 
-                   animation-duration: 1s; 
-                   animation-delay: 5s; 
-                   animation-fill-mode: forwards;">
-                 </div>
-                 <div class="img_block" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100">
-                 </div>
-               </div>
-             </div>
-           </div>
+      </section>
+      
+      <section class="row_am communication_section2" style="background-image: url('dashboard/hero-bg.png'); background-repeat: no-repeat;">
+         <div class="communication_inner">
+           <img src="dashboard/hero-phone.png" alt="">
          </div>
-       </section> -->
-
-       <!-- <section class="row_am collaborate_section" style="background-image: url('dashboard/hero-bg.png'); min-height: 700px;">
-         <div class="container">
-           <div class="row">
-             <div class="col-md-12">
-               <div class="collaborate_image" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100">
-                 <div class="img_block" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100">
-                   <img class="icon_img moving_animation" src="https://demo.thebuildportals.com/frontend/images/new/Collaborate-icon_1.png" alt="image">
-                   <img src="https://demo.thebuildportals.com/frontend/images/home/Collaborate-01.webp" alt="image">
-                 </div>
-                 <div class="img_block" data-aos="fade-in" data-aos-duration="2000" data-aos-delay="100">
-                   <img src="https://demo.thebuildportals.com/frontend/images/home/Collaborate-02.webp" alt="image">
-                   <img class="icon_img moving_animation" src="https://demo.thebuildportals.com/frontend/images/new/Collaborate-icon_2.png" alt="image">
-                 </div>
-               </div>
-             </div>
-           </div>
-         </div>
-       </section> -->
-
+      </section>
 
       <section class="section mt-5">
          <div class="container">
@@ -772,12 +785,38 @@
          </div>
       </section>
 
+      <section class="section mt-5">
+         <div class="container">
+            <div class="mx-auto row w-100 g-5 align-items-center">
+               <div class="col-md-6">
+                  <div class="section-head">
+                     <h1 class="section-title">
+                        Clean and Easily Manageable Dashboard
+                     </h1>
+                  </div>
+                  <div class="section-content">
+                     <p class="lead">
+                        We understand the value of simplicity, and our dashboard reflects just that. Function and manage  effortlessly through a clutter-free interface, where every element serves a purpose.
+                     </p>
+                     <p class="lead">
+                        The organized look ensures that information is at your fingertips, promoting a seamless user experience. Say goodbye to the chaos of complex layouts—our dashboard is a breath of fresh air, offering not just clarity, but a sense of control and efficiency.
+                     </p>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <img src="dashboard/form-gif.gif" alt>
+               </div>
+            </div>
+         </div>
+      </section>
+
       <section class="powerful_solution" data-aos="fade-in" data-aos-duration="1000">
       
          <div class="container">
-           <div class="section_title" data-aos="fade-up" data-aos-duration="1000">
-             <h2>Industry Expertise and Experience</h2>
-             <p>Many industry leaders already trust us for their security needs; join the ranks of our satisfied clients.</p>
+           <div class="section-head mt-5 mb-5" data-aos="fade-up" data-aos-duration="1000">
+             <h1 class="section-title text-center">
+               Features You Can't Miss Out On
+            </h1>
            </div>
            <div class="images_gallery_block row">
              <div class="gl_block col-md-3 col-sm-6" data-aos="fade-up" data-aos-duration="1000">
